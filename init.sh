@@ -10,11 +10,17 @@
 
 if [ -d env ]; then 
     source env/bin/activate
-else
+else    
     python3 -m venv env
     source env/bin/activate
+    pip install --upgrade pip
+    pip install -r requirements.txt
 fi
 
 if [ "$(pwd)/env/bin/python" = "$(which python)" ]; then 
     echo "python environment set"
-fi 
+fi
+
+# pip install requests
+# pip3 install -r requirements.txt
+# python -m pip --version
