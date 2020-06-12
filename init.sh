@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# you should have python3 installed
+
 # make sure that you have set permissions for this file:
 # chmod 755 init.sh
 
@@ -13,14 +15,14 @@ if [ -d env ]; then
 else    
     python3 -m venv env
     source env/bin/activate
-    pip install --upgrade pip
-    pip install -r requirements.txt
+    if [ "$(pwd)/env/bin/python" = "$(which python)" ]; then 
+        echo "python environment set"
+        pip install --upgrade pip
+        pip install -r requirements.txt
+    else
+        echo "something went wrong when setting the python environment"
+        exit 1
+    fi
 fi
 
-if [ "$(pwd)/env/bin/python" = "$(which python)" ]; then 
-    echo "python environment set"
-fi
-
-# pip install requests
-# pip3 install -r requirements.txt
 # python -m pip --version
