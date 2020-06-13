@@ -32,9 +32,22 @@ this will extract the names of all genes that are predicted as being a "Mitochon
 `/data/out/mitochondrial_transfer_peptides.txt`
 
 ```txt
-tr_K7ELF1_K7ELF1_HUMAN
-tr_H0Y7P7_H0Y7P7_HUMAN
-sp_P30837_AL1B1_HUMAN
-sp_Q16775_GLO2_HUMAN
+Q5T8U3
+SUCB1
+C9JYX1
+E9PRQ6
+C9J6X0
+PTCD3
+E9PNQ5
 ...
+```
+
+## note
+
+the returned values from `targetP` look like: `tr_K7ELF1_K7ELF1_HUMAN`
+but we are only interested in the `K7ELF1` part.
+In general it seems like the long versions have the form
+
+```
+<sp|tr>_<UniProtKB>_<GENE>_<HUMAN|Hm>(_<number>)
 ```
