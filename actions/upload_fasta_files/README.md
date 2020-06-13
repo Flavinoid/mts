@@ -9,12 +9,12 @@ you can upload the files in `/fetch_fasta_data_from_uniprot/out/fasta` one by on
 
 ## step 1
 
-[[/actions/upload_fasta_files/howto/step1a.png | step1]]
+![Step 1](/howto/step1a.png?raw=true)
 
 or using the mirror:
 
-[[/actions/upload_fasta_files/howto/step1b.png | step1]]
+![Step 1](/howto/step1b.png?raw=true)
 
 you can then download the JSON
 
-[[/actions/upload_fasta_files/howto/step2.png | step2]]
+![Step 2](/howto/step2.png?raw=true)
