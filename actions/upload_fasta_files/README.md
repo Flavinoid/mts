@@ -27,9 +27,9 @@ once you have the json in the folder `/data/out/json` you can execute the script
 $ ./run.sh
 ```
 
-this will extract the names of all proteins that are predicted as being a "Mitochondrial transfer peptide". The output is then written to a file
+this will extract the names of all proteins that are predicted as being a "Mitochondrial transfer peptide" or "Signal peptide". The output is then written to two files `/data/out/mitochondrial_transfer_peptides.txt` and `/data/out/signal_peptides.txt`
 
-`/data/out/mitochondrial_transfer_peptides.txt`
+The files are just normal text files with a name per row:
 
 ```txt
 Q5T8U3
