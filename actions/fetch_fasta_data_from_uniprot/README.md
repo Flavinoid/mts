@@ -12,7 +12,7 @@ to check that it works it is advisable to then run the following command
 $ ./run.sh --dev
 ```
 
-The `--dev` flag will use a file called [protein_ids_samples.csv](data/in/protein_ids_samples.csv). This file is a small selection of the full set of data [protein_ids.csv](data/in/protein_ids.csv).
+The `--dev` flag will use a file called [protein_ids_sample.csv](data/in/protein_ids_sample.csv). This file is a small selection of the full set of data [protein_ids.csv](data/in/protein_ids.csv).
 
 Using the main file takes a while and generates a roughly 5mb output file.
 
