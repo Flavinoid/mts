@@ -30,7 +30,7 @@ def make_fasta_request_files(input_csv, out_dir):
                     file_residues += residues
                     file_seqs += 1
                 text = "\n".join([h, f])
-                pth = out_dir + "/out_file" + str(file_n) + ".fasta"
+                pth = out_dir + "/targetp_input" + str(file_n) + ".fasta"
                 with open(pth, "a") as out_file:
                     out_file.write(text + "\n\n")
 
