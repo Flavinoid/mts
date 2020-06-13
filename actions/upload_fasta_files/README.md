@@ -1,6 +1,6 @@
 # Uploading to TargetP
 
-Unfortunately the first hald of this actions is currently a manual step.
+Unfortunately the first half of this action is currently a manual step.
 
 Using either [http://www.cbs.dtu.dk/services/TargetP/](http://www.cbs.dtu.dk/services/TargetP/) or the mirror
 [https://services.healthtech.dtu.dk/service.php?TargetP](https://services.healthtech.dtu.dk/service.php?TargetP)
