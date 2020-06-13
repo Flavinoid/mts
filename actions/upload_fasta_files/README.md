@@ -1,6 +1,6 @@
 # Uploading to TargetP
 
-Unfortunately this is currently a manual step.
+Unfortunately the first hald of this actions is currently a manual step.
 
 Using either [http://www.cbs.dtu.dk/services/TargetP/](http://www.cbs.dtu.dk/services/TargetP/) or the mirror
 [https://services.healthtech.dtu.dk/service.php?TargetP](https://services.healthtech.dtu.dk/service.php?TargetP)
@@ -18,3 +18,23 @@ or using the mirror:
 you can then download the JSON. To see the results of when it was last run (13/6/2020) have a look in [/data/out/json](./data/out/json)
 
 ![Step 2](./howto/step2.png?raw=true)
+
+## cleaning up the Data
+
+once you have the json in the folder `/data/out/json` you can execute the script
+
+```
+$ ./run.sh
+```
+
+this will extract the names of all genes that are predicted as being a "Mitochondrial transfer peptide". The output is then written to a file
+
+`/data/out/mitochondrial_transfer_peptides.txt`
+
+```txt
+tr_K7ELF1_K7ELF1_HUMAN
+tr_H0Y7P7_H0Y7P7_HUMAN
+sp_P30837_AL1B1_HUMAN
+sp_Q16775_GLO2_HUMAN
+...
+```
