@@ -22,7 +22,7 @@ The three main steps required to generate the data required for creating the vis
 
 1. [fetch_fasta_data_from_uniprot](actions/fetch_fasta_data_from_uniprot)
 2. [upload_fasta_files](actions/upload_fasta_files)
-3. [build_predictions](actions/build_predictions)
+3. [build_protein_predictions](actions/build_protein_predictions)
 
 every new step builds upon the data returned by the previous ones.
 

@@ -27,7 +27,7 @@ once you have the json in the folder `/data/out/json` you can execute the script
 $ ./run.sh
 ```
 
-this will extract the names of all genes that are predicted as being a "Mitochondrial transfer peptide". The output is then written to a file
+this will extract the names of all proteins that are predicted as being a "Mitochondrial transfer peptide". The output is then written to a file
 
 `/data/out/mitochondrial_transfer_peptides.txt`
 
@@ -49,5 +49,5 @@ but we are only interested in the `K7ELF1` part.
 In general it seems like the long versions have the form
 
 ```
-<sp|tr>_<UniProtKB>_<GENE>_<HUMAN|Hm>(_<number>)
+<sp|tr>_<UniProtKB>_<ID>_<HUMAN|Hm>(_<number>)
 ```
