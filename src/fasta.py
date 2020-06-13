@@ -36,6 +36,6 @@ def make_fasta_request_files(input_csv, out_dir):
 
 
 if __name__ == "__main__":
-    input_csv = sys.argv[1]  # where to save the uniprot csv file
+    input_csv = sys.argv[1]  # the uniprot csv file
     output_dir = sys.argv[2]  # directory for the fasta files to be written to
     make_fasta_request_files(input_csv, output_dir)
