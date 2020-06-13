@@ -4,7 +4,8 @@ import sys
 
 
 def collect_mitochondial_transfer_peptides(dir):
-    matches = set()
+    mito_matches = set()
+    signal_matches = set()
     misses = set()
     for filename in os.listdir(dir):
         with open(os.path.join(dir, filename), "r") as file:
@@ -19,25 +20,33 @@ def collect_mitochondial_transfer_peptides(dir):
                 # performance is not an issue!
                 prediction = data.get("Prediction", None)
                 if prediction == "Mitochondrial transfer peptide":
-                    matches.add(gene_name)
+                    mito_matches.add(gene_name)
+                elif prediction == "Signal peptide":
+                    signal_matches.add(gene_name)
                 else:
                     misses.add(gene_name)
-    return (matches, misses)
+    return (mito_matches, signal_matches, misses)
 
 
 if __name__ == "__main__":
     targetP_json_dir = sys.argv[1]
     output_dir = sys.argv[2]
-    (matches, misses) = collect_mitochondial_transfer_peptides(targetP_json_dir)
-    matchLen = len(matches)
+    (mito_matches, signal_matches, misses) = collect_mitochondial_transfer_peptides(
+        targetP_json_dir
+    )
+    mito_matchLen = len(mito_matches)
+    signal_matchLen = len(signal_matches)
     missLen = len(misses)
     print(
-        "found {} 'Mitochondrial transfer peptide' genes out of {}\n".format(
-            matchLen, matchLen + missLen
+        "found {} 'Mitochondrial transfer peptide' proteins and {} 'Signal peptides' out of {}\n".format(
+            mito_matchLen, signal_matchLen, mito_matchLen + signal_matchLen + missLen
         )
     )
     with open(
         os.path.join(output_dir, "mitochondrial_transfer_peptides.txt"), "w"
     ) as file:
-        for gene in matches:
+        for gene in mito_matches:
+            file.write("{}\n".format(gene))
+    with open(os.path.join(output_dir, "signal_peptides.txt"), "w") as file:
+        for gene in signal_matches:
             file.write("{}\n".format(gene))
