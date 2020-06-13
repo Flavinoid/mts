@@ -20,8 +20,10 @@ An `action` directory normally contains a `run.sh` script that guides you throug
 
 The three main steps required to generate the data required for creating the visualizations are the following.
 
-1. `fetch_fasta_data_from_uniprot`
-2. `upload_fasta_files`
-3. `generate_predictions`
+1. [fetch_fasta_data_from_uniprot](actions/fetch_fasta_data_from_uniprot)
+2. [upload_fasta_files](actions/upload_fasta_files)
+3. [build_predictions](actions/build_predictions)
 
-every step builds upon the data returned by the previous steps.
+every new step builds upon the data returned by the previous ones.
+
+Once the prediction files have been created it is possible to start with the visualizations and analysis.
