@@ -7,6 +7,8 @@ from collections import namedtuple
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
+from shared.utils import load_file_as_set
+
 ROW = namedtuple("ROW", ["value", "difference", "label"])
 CSV = namedtuple("CSV", ["name", "rows"])
 
@@ -222,6 +224,8 @@ if __name__ == "__main__":
     prediction_file = sys.argv[2]
     settings = sys.argv[3]
     output_csv = sys.argv[4]
+
+    predictions = load_file_as_set(prediction_file)
 
     # for (directory, data) in dirs_with_files.items():
     #     prediction_file = data["gene_predictions"]
