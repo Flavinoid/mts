@@ -1,6 +1,6 @@
 # mts
 
-MTS prediction
+MTS (Mitochondrial Targeting Sequence) prediction
 
 ## Setup
 
