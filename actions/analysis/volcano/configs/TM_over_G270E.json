@@ -1,0 +1,41 @@
+{
+  "title": "TM over G270E",
+  "renamings": { "PEO1": "TWINKLE", "POLG": "POLG1" },
+  "figsize": [7, 7],
+  "axis": { "x": [-4, 10], "y": [0, 6] },
+  "labels": {
+    "red": "mtDNA factors",
+    "blue": "predicted MTS",
+    "grey": "identified"
+  },
+  "conditionalDisplay": [
+    { "mts": true },
+    { "enrichment": { "GT": 2 } },
+    { "pvalue": { "GE": 1.3 } }
+  ],
+  "colors": {
+    "black": ["GLUD1"],
+    "red": [
+      "MACROD1",
+      "POLG1",
+      "TWINKLE",
+      "LIG3",
+      "TOP1",
+      "TOP2B",
+      "AURKAIP1",
+      "POLRMT",
+      "TFB2M",
+      "TRMU",
+      "TFAM"
+    ]
+  },
+  "allignment": {
+    "HIST1H2BK": { "ha": "right" },
+    "TWINKLE": { "ha": "right" },
+    "SUN1": { "ha": "left" },
+    "VRK1": { "ha": "left", "va": "center" },
+    "SAFB": { "ha": "left" },
+    "IST1": { "ha": "left" },
+    "GPT2": { "ha": "center" }
+  }
+}

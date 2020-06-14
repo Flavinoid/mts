@@ -1,0 +1,40 @@
+{
+  "title": "TM over GFP",
+  "renamings": { "PEO1": "TWINKLE", "POLG": "POLG1" },
+  "figsize": [7, 7],
+  "axis": { "x": [-4, 10], "y": [0, 6] },
+  "labels": {
+    "red": "mtDNA factors",
+    "blue": "predicted MTS",
+    "grey": "identified"
+  },
+  "conditionalDisplay": [
+    { "mts": true },
+    { "enrichment": { "GT": 2 } },
+    { "pvalue": { "GE": 1.3 } }
+  ],
+  "colors": {
+    "black": ["GLUD1"],
+    "red": [
+      "MACROD1",
+      "POLG1",
+      "TWINKLE",
+      "LIG3",
+      "TOP1",
+      "TOP2B",
+      "AURKAIP1",
+      "POLRMT",
+      "TFB2M",
+      "TRMU",
+      "TFAM"
+    ]
+  },
+  "allignment": {
+    "TWINKLE": { "ha": "left" },
+    "PRKDC": { "ha": "right" },
+    "XRCC6": { "ha": "center" },
+    "RPA1": { "ha": "right" },
+    "SUN2": { "ha": "right" },
+    "MACROD1": { "ha": "left" }
+  }
+}
