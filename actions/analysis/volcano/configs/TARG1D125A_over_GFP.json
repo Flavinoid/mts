@@ -1,7 +1,7 @@
 {
   "title": "TARG1D125A over GFP",
   "renamings": { "PEO1": "TWINKLE", "OARD1": "TARG1", "POLG": "POLG1" },
-  "figsize": [7, 7],
+  "figsize": [14, 7],
   "axis": { "x": [-6, 16], "y": [0, 6] },
   "labels": {
     "red": "mtDNA factors",
