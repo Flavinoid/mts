@@ -1,8 +1,8 @@
 {
-  "title": "TARG1 over DK84-D123",
-  "renamings": { "PEO1": "TWINKLE", "OARD1": "TARG1", "POLG": "POLG1" },
+  "title": "G270E over GFP",
+  "renamings": { "PEO1": "TWINKLE", "POLG": "POLG1" },
   "figsize": [16, 7],
-  "axis": { "x": [-6, 16], "y": [0, 8] },
+  "axis": { "x": [-4, 10], "y": [0, 7] },
   "labels": {
     "red": "mtDNA/mtRNA factors",
     "blue": "predicted MTS",
@@ -16,7 +16,7 @@
   "colors": {
     "black": ["GLUD1"],
     "red": [
-      "TARG1",
+      "MACROD1",
       "POLG1",
       "TWINKLE",
       "LIG3",
@@ -30,7 +30,12 @@
     ]
   },
   "allignment": {
-    "TWINKLE": { "ha": "right", "va": "center" },
-    "TOP2A": { "ha": "right", "va": "center" }
+    "TFB2M": { "ha": "right", "va": "top" },
+    "TWINKLE": { "ha": "right" },
+    "TOP1": { "ha": "right", "va": "center" },
+    "XRCC1": { "ha": "left", "va": "center" },
+    "ATAD3B": { "ha": "right" },
+    "LMNA": { "ha": "right" },
+    "POLG1": { "ha": "left", "va": "center" }
   }
 }

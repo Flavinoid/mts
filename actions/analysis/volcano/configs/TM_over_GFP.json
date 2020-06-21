@@ -1,10 +1,10 @@
 {
   "title": "TM over GFP",
   "renamings": { "PEO1": "TWINKLE", "POLG": "POLG1" },
-  "figsize": [7, 7],
-  "axis": { "x": [-4, 10], "y": [0, 6] },
+  "figsize": [16, 7],
+  "axis": { "x": [-4, 10], "y": [0, 7] },
   "labels": {
-    "red": "mtDNA factors",
+    "red": "mtDNA/mtRNA factors",
     "blue": "predicted MTS",
     "grey": "identified"
   },
