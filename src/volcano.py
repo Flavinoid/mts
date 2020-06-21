@@ -65,6 +65,7 @@ if __name__ == "__main__":
     print("creating PDF's for directory: {}".format(input_dir))
 
     for file_name in os.listdir(input_dir):
+        print(file_name)
         input_name = file_name.split(".")[0]
         csv_path = os.path.join(input_dir, file_name)
 

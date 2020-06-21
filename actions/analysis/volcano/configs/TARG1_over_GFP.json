@@ -1,10 +1,10 @@
 {
   "title": "TARG1 over GFP",
   "renamings": { "PEO1": "TWINKLE", "OARD1": "TARG1", "POLG": "POLG1" },
-  "figsize": [7, 7],
-  "axis": { "x": [-6, 16], "y": [0, 6] },
+  "figsize": [16, 7],
+  "axis": { "x": [-6, 16], "y": [0, 8] },
   "labels": {
-    "red": "mtDNA factors",
+    "red": "mtDNA/mtRNA factors",
     "blue": "predicted MTS",
     "grey": "identified"
   },
@@ -30,8 +30,8 @@
     ]
   },
   "allignment": {
-    "TWINKLE": { "ha": "right", "va": "center" },
-    "POLG1": { "ha": "left", "va": "center" },
+    "TWINKLE": { "ha": "left" },
+    "POLG1": { "ha": "right" },
     "GLUD1": { "ha": "right" },
     "MACROD1": { "ha": "left" },
     "XRCC6": { "ha": "left" },
